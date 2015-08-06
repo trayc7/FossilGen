@@ -41,7 +41,7 @@ void printHelp(){
 	cout << "\tHere are the available options that you can change (default values are in []):\n";
 	cout << "\t\t-out : output file name prefix **\n";
 	cout << "\t\t-n   : number of extant taxa [= 100]\n";
-	cout << "\t\t-r   : number of replicatess [= 10]\n";
+	cout << "\t\t-r   : number of replicates [= 10]\n";
 	cout << "\t\t-sc  : tree scale [= 1.0]\n";
 	cout << "\t\t-br  : birth rate [= 0.5]\n";
 	cout << "\t\t-dr  : death rate [= 0.2]\n";
@@ -132,7 +132,7 @@ int main(int p, char *argStr[])
 					randomFossSample = true;
 				else if(!strcmp(curArg, "-fsp"))
 					fossSamp = atoi(argStr[i+1]);
-				else if(!strcmp(curArg, "-allf")){
+				else if(!strcmp(curArg, "-allf")){ // Need this to plot all 
 					sampAllFoss = true;
 					fossSamp = 2;
 				}
