@@ -132,7 +132,7 @@ int main(int p, char *argStr[])
 					randomFossSample = true;
 				else if(!strcmp(curArg, "-fsp"))
 					fossSamp = atoi(argStr[i+1]);
-				else if(!strcmp(curArg, "-allf")){ // Need this to plot all 
+				else if(!strcmp(curArg, "-allf")){ // Need this to plot all
 					sampAllFoss = true;
 					fossSamp = 2;
 				}
