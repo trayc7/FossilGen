@@ -23,7 +23,7 @@
  * Some of this code is from publicly available source by John Huelsenbeck and Fredrik Ronquist
  *
 */
-
+#include <cstdlib>
 #include <iostream>
 #include <string>
 #include <fstream>

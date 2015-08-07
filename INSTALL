@@ -1,0 +1,24 @@
+Building
+
+It is suggested that you build this source code in a separate directory. Here 
+are some instructions:
+
+the $ part of the command -- note that if you are using a different shell you
+may see a % instead of $. That is fine, the instructions should still work).
+
+	$ sh bootstrap.sh
+	$ mkdir build
+	$ cd build
+	$ ../configure --prefix=`pwd`/installed
+	$ make
+	$ make install
+
+You should now have the bls binary located in build/installed/bin/
+
+## NOTE ##
+Using "--prefix=`pwd`/installed" will allow you to "make install" the binary
+in a directory called "installed" within your local "build" directory. If you would 
+like to install the binary in /usr/local/bin then do not include the prefix (and you
+will have to invoke 'sudo'). Alternatively you can install the binary in a different 
+directory by indicating it with the --prefix option
+##########
